@@ -1,7 +1,7 @@
-#SimpleRepair
+# SimpleRepair
 Simple plugin for repairing your items or armor to max durability.
 
-#Features
+# Features
 * *Repair all items in your inventory.*
 * *Repair the armor you have currently equipped.*
 * *Repair the item you're holding.*

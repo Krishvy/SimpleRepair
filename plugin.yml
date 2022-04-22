@@ -1,0 +1,9 @@
+name: SimpleRepair
+api: 4.0.0
+main: Krishvy\SimpleRepair
+version: 1.0.0
+author: Krishvy
+
+permissions:
+  repaircommand.use:
+    default: op

@@ -5,5 +5,9 @@ version: 1.0.0
 author: Krishvy
 
 permissions:
-  repaircommand.use:
+  repairhand.use:
+    default: op
+  repairall.use:
+    default: op
+  repairarmor.use:
     default: op

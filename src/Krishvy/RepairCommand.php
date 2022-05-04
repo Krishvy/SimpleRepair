@@ -49,10 +49,9 @@ class RepairCommand extends Command
             case "armor":
                 if($sender->hasPermission("repairarmor.use")) {
                     foreach ($sender->getArmorInventory()->getContents() as $index => $item) {
-                        if (!$item instanceof Durable) {
-                            return true;
+                        if ($item instanceof Durable) {
+                            $sender->getArmorInventory()->setItem($index, $item->setDamage(0));
                         }
-                        $sender->getArmorInventory()->setItem($index, $item->setDamage(0));
                     }
                     $sender->sendMessage(TextFormat::GREEN . "Successfully repaired all your equipped armor.");
                 } else $sender->sendMessage(TextFormat::RED."You do not have the permission to use this command.");

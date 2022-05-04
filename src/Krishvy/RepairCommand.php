@@ -40,10 +40,9 @@ class RepairCommand extends Command
                 if($sender->hasPermission("repairhand.use")) {
                     $index = $sender->getInventory()->getHeldItemIndex();
                     $item = $sender->getInventory()->getItem($index);
-                    if (!$item instanceof Durable) {
-                        $sender->sendMessage(TextFormat::RED . "Cannot repair item.");
+                    if ($item instanceof Durable) {
+                        $sender->getInventory()->setItem($index, $item->setDamage(0));
                     }
-                    $sender->getInventory()->setItem($index, $item->setDamage(0));
                 } else $sender->sendMessage(TextFormat::RED."You do not have the permission to use this command.");
                 break;
             case "armor":

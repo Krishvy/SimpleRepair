@@ -1,6 +1,6 @@
 name: SimpleRepair
 api: 4.0.0
-main: Krishvy\SimpleRepair
+main: Krishvy\SimpleRepair\SimpleRepair
 version: 1.0.0
 author: Krishvy
 

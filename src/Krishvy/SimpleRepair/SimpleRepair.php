@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Krishvy;
+namespace Krishvy\SimpleRepair;
 
 use pocketmine\plugin\PluginBase;
-use Krishvy\RepairCommand;
+use Krishvy\SimpleRepair\RepairCommand;
 
 class SimpleRepair extends PluginBase
 {
